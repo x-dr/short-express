@@ -20,8 +20,8 @@ const redirect = async (req, res) => {
 
     // 如果目标存在则 307 重定向
 
-    // await addLog(url,slug, req.get('user-agent'), req.ip.split(':')[3])
-    await addLog(url,slug, req.get('user-agent'), req.get('x-forwarded-for'))
+    await addLog(url,slug, req.get('user-agent'), req.ip.split(':')[3])
+    // await addLog(url,slug, req.get('user-agent'), req.get('x-forwarded-for'))
     res.redirect(url)
 
   } catch (e) {

@@ -21,3 +21,9 @@ docker run  -itd -e DB_URL="mysql://user:password@host:port/databases"  -e PORT=
 + `DB_URL` 数据库URL `"mysql://user:password@host:port/databases"`
 
 + `PORT` 端口`（默认 3001）`
+
+
+
+# 使用 nginx 反代
+
+> 参考short.conf

@@ -11,7 +11,23 @@ cp .env.example .env
 vi .env
 npm start
 ```
+#### 导入数据库文件
+```bash
+# 下载
+wget https://gh.tryxd.cn/raw.githubusercontent.com/x-dr/short/main/short.sql
 
+#导入
+mysql -u root -p  < short.sql
+```
+
+> mysql8.0可能要执行这命令
+```bash
+
+mysql -u root -p
+ALTER USER username  IDENTIFIED WITH mysql_native_password BY 'password';
+
+#`username`是你的数据库用户名 'password'是你的数据库密码
+```
 
 ### docker
 ```bash

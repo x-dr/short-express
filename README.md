@@ -13,7 +13,12 @@ npm start
 
 # docker
 ```bash
-docker run  -itd -e DB_URL="mysql://user:password@host:port/databases"  -e PORT=3001  -p 3001:3001/tcp  gindex/short:latest
+docker run -itd \
+--name short \
+-e DB_URL="mysql://user:password@host:port/databases" \
+-e PORT=3001  \
+-p 3001:3001   \
+gindex/short:latest
 
 ```
 # 环境变量

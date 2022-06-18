@@ -1,4 +1,7 @@
-# 安装
+
+
+
+### 安装
 
 ```bash
 git clone https://github.com/x-dr/short.git
@@ -11,7 +14,7 @@ npm start
 ```
 
 
-# docker
+### docker
 ```bash
 docker run -itd \
 --name short \
@@ -21,7 +24,7 @@ docker run -itd \
 gindex/short:latest
 
 ```
-# 环境变量
+### 环境变量
 
 + `DB_URL` 数据库URL `"mysql://user:password@host:port/databases"`
 
@@ -29,6 +32,6 @@ gindex/short:latest
 
 
 
-# 使用 nginx 反代
+### 使用 nginx 反代
 
-> 参考short.conf
+>  参考[short.conf](https://github.com/x-dr/short/blob/main/short.conf)

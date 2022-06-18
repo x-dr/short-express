@@ -30,7 +30,22 @@ gindex/short:latest
 + `PORT` 端口`（默认 3001）`
 
 
+### api
+```bash
+curl https://d.1rmb.ml/create -d "url=https://d.1rmb.ml" -d "slug=ddd"
+```
 
+#### 参数
++ url: 目标 url
++ slug: 自定义短 id `（默认自动生成）`
+
+#### 响应
+```json
+{
+  "slug": "<slug>",
+  "link": "http://d.1rmb.ml/<slug>"
+}
+```
 ### 使用 nginx 反代
 
 >  参考[short.conf](https://github.com/x-dr/short/blob/main/short.conf)

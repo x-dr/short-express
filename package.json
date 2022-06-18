@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "pm2 start index.js -n short -o logs/pm2.log -e logs/pm2-error.log --no-daemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mysql": "^2.18.1",
-    "nanoid": "^4.0.0"
+    "nanoid": "^4.0.0",
+    "pm2": "^5.2.0"
   }
 }

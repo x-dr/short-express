@@ -58,8 +58,8 @@ const create = async (req, res) => {
 
 
    // 如果不存在则创建
-    const newSlug = await addLink(url,slug, req.get('user-agent'), req.ip.split(':')[3])
-    // const newSlug = await addLink(url,slug, req.get('user-agent'), req.get('x-forwarded-for'))
+    // const newSlug = await addLink(url,slug, req.get('user-agent'), req.ip.split(':')[3])
+    const newSlug = await addLink(url,slug, req.get('user-agent'), req.get('x-forwarded-for'))
 
     // response
     res.send({ slug: newSlug, link: origin + newSlug })
